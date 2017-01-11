@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCbpjKzAavnGEXr1mosNoVffDYvJKXdkYY"></script>
   <link rel="stylesheet" href="asset/css/main.css" />
   <script src="asset/js/index.js"></script>
 </head>
@@ -38,10 +38,10 @@
 		<li><a href="#Skills">Skills</a></li>
         <li><a href="#Working">Working Experience</a></li>
         <li><a href="#Project">Project Experience</a></li>
-		
+	<li><a href="Resume_YijunHe.pdf" download>Download Resume</a></li>	
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a data-toggle="modal" data-target="#myModal" class="glyphicon glyphicon-envelope">Contact Me</a></li>
+        <li><a data-toggle="modal" data-target="#myModal" class="glyphicon glyphicon-envelope" style="cursor:pointer" >Contact Me</a></li>
 		
       </ul>
     </div>
@@ -67,7 +67,7 @@
 			</br>
 			<div class="container pre-scrollable" >
 				
-				<form class="form-horizontal" name="myFrom" ng-controller="formCtrl" novalidate>
+				<form method="POST" action="email.php" class="form-horizontal" name="myFrom" ng-controller="formCtrl" novalidate>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="Name">Name:</label>
 					<div class="col-sm-3">
